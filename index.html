@@ -4,48 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="robots" content="noindex">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
-
-	<title>Web Bluetooth API humidity / temperature Sensor DEMO</title>
-
-	<link rel="stylesheet" href="assets/css/flat-ui.min.css" />
-	<link rel="stylesheet" href="assets/css/normalize.css">
-	<link rel="stylesheet" href="assets/css/index.css" />
-
+	<title>Web Bluetooth API demo</title>
 	<script src="assets/script/app.js"></script>
 </head>
 <body>
 
-<div id="ble-connect-button" class="show">
-	<div class="view-inner">
-		<div class="btn btn-block btn-lg btn-primary">CONNECT</div>
+<div id="mainView" class="hide">
+	<div class="ch0">
+		<p id="ch0Data">-</p>
+	</div>
+	<div class="ch1">
+		<p id="ch1Data">-</p>
+	</div>
+	<div class="test">
+		<p id="testData">-</p>
 	</div>
 </div>
 
-<div id="main-view" class="hide">
-	<div class="view-inner">
-		<div class="humidity">
-			<p class="h-text">éºìx</p>
-
-			<div class="text-set">
-				<p id="humidity-text" class="value-text">-</p>
-				<p class="unit">Åì</p>
-			</div>
-		</div>
-
-		<div class="temperature">
-			<p class="h-text">â∑ìx</p>
-
-			<div class="text-set">
-				<p id="temperature-text" class="value-text">-</p>
-				<p class="unit">ìx</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div id="loading" class="hide">
-	<img src="assets/images/loading.svg" width="50" height="50">
-</div>
+<body>
+    <input type="button" value="Connect" onclick="OnConnectClick();"/><br />
+</body>
 
 </body>
 </html>
